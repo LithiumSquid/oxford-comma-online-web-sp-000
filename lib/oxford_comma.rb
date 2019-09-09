@@ -5,6 +5,7 @@ def oxford_comma(array)
     array.join("and")
   else if array.length >= 3
     array[-1] = "and #{array[-1]}"
+    array.join(",")
   else
     nil
 end
